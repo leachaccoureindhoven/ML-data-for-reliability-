@@ -1,0 +1,8 @@
+#!/usr/bin/bash 
+#SBATCH --nodes=1 
+#SBATCH --partition=elec-phi.gpu.q 
+#SBATCH --output=openme.out 
+#SBATCH --error=slurm-%j.err 
+#SBATCH --output=slurm-%j.out 
+
+./hp_tuner.py
